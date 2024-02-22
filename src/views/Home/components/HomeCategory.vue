@@ -1,6 +1,7 @@
 <script setup>
 import { useCategoryStore } from "@/stores/category";
 const categoryStore =   useCategoryStore()
+console.log(categoryStore.categoryList)
 </script>
 
 <template>
@@ -16,6 +17,7 @@ const categoryStore =   useCategoryStore()
             <li v-for="i in item.goods" :key="i.id">
               <RouterLink to="/">
                 <img :src="i.picture" alt="" />
+              
                 <div class="info">
                   <p class="name ellipsis-2">
                     {{i.name}}
@@ -110,7 +112,7 @@ const categoryStore =   useCategoryStore()
               padding: 10px;
 
               &:hover {
-                background: #e3f9f4;
+                background: #709bf8;
               }
 
               img {

@@ -1,5 +1,24 @@
 <script setup>
-
+// import {getCategoryAPI} from '@/apis/layout'
+// import {onMounted,ref} from 'vue'
+import {reactive} from 'vue'
+const categoryList = reactive(
+  [{id:'01',name:'首页'},
+  {id:'02',name:'积分商城'},
+  {id:'03',name:'领券中心'},
+  {id:'04',name:'定制服务'},
+  {id:'05',name:'积分抽奖'}
+]
+)
+// const categoryList = ref ([])
+// const getCategory = async ()=>{
+//   const res = await getCategoryAPI()
+//   categoryList.value = res.result
+// }
+// onMounted(()=>{
+//   getCategory()
+// }
+// )
 </script>
 
 <template>
@@ -9,13 +28,9 @@
         <RouterLink to="/">小兔鲜</RouterLink>
       </h1>
       <ul class="app-header-nav">
-        <li class="home">
-          <RouterLink to="/">首页</RouterLink>
+        <li class="home" v-for="item in categoryList" :key="item.id">
+          <RouterLink to="/">{{item.name}}</RouterLink>
         </li>
-        <li> <RouterLink to="/">领券中心</RouterLink> </li>
-        <li> <RouterLink to="/">积分商城</RouterLink> </li>
-        <li> <RouterLink to="/">定制服务</RouterLink> </li>
-        <li> <RouterLink to="/">会员中心</RouterLink> </li>
       </ul>
       <div class="search">
         <i class="iconfont icon-search"></i>

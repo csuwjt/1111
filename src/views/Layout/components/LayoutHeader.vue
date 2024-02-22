@@ -26,7 +26,7 @@ const categoryStore =   useCategoryStore()
         </li>
       </ul>
       <div class="search">
-        <i class="iconfont icon-search"></i>
+        <i class="iconfont icon-sousuo"></i>
         <input type="text" placeholder="搜一搜">
       </div>
       <!-- 头部购物车 -->

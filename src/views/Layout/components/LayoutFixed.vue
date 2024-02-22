@@ -14,15 +14,17 @@ const categoryStore =   useCategoryStore()
       <RouterLink class="logo" to="/" />
       <!-- 导航区域 -->
       <ul class="app-header-nav ">
+        <li><RouterLink to="/">首页</RouterLink></li>
         <li class="home" v-for="item in categoryStore.categoryList" :key="item.id">
+          
           <RouterLink to="/">{{item.name}}</RouterLink>
         </li>
        
       </ul>
 
       <div class="right">
-        <RouterLink to="/">品牌</RouterLink>
-        <RouterLink to="/">专题</RouterLink>
+        <RouterLink to="/">领券中心</RouterLink>
+        <RouterLink to="/">积分商城</RouterLink>
       </div>
     </div>
   </div>
@@ -72,7 +74,7 @@ const categoryStore =   useCategoryStore()
 
     a {
       width: 76px;
-      margin-right: 40px;
+      margin-right: 20px;
       font-size: 16px;
       line-height: 1;
 

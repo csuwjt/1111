@@ -14,10 +14,10 @@
 import {ref} from 'vue'
 
 const newList = ref([
-    {id:'01',picture:'src/assets/images/HomeNew1.jpg',name:'龙年红包',price:'2.00'},
-    {id:'02',picture:'src/assets/images/HomeNew2.jpg',name:'龙年台历',price:'15.00'},
-    {id:'03',picture:'src/assets/images/HomeNew3.jpg',name:'长款羽绒服',price:'499.00'},
-    {id:'04',picture:'src/assets/images/HomeNew4.jpg',name:'中南杯茶',price:'40.00'}
+    {id:'1001',picture:'src/assets/images/HomeNew1.jpg',name:'龙年红包',price:'2.00'},
+    {id:'1002',picture:'src/assets/images/HomeNew2.jpg',name:'龙年台历',price:'15.00'},
+    {id:'1003',picture:'src/assets/images/HomeNew3.jpg',name:'长款羽绒服',price:'499.00'},
+    {id:'1004',picture:'src/assets/images/HomeNew4.jpg',name:'中南杯茶',price:'40.00'}
 ])
 
 import HomePanel from './HomePanel.vue'
@@ -31,7 +31,7 @@ import HomePanel from './HomePanel.vue'
   <!-- 下面是插槽主体内容模版 -->
   <ul class="goods-list">
     <li v-for="item in newList" :key="item.id">
-      <RouterLink to="/">
+      <RouterLink :to="`/detail/${item.id}`">
         <img v-img-lazy="item.picture" alt="" />
         <p class="name">{{ item.name }}</p>
         <p class="price">&yen;{{ item.price }}</p>

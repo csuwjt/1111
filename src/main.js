@@ -12,5 +12,6 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(lazyPlugin)
 app.use(router)
+app.mount('#app')
 
 

@@ -3,24 +3,24 @@
 
 import {ref} from 'vue'
 
-const stationeryList = ref([
-    {id:'01',picture:'src/assets/images/HomeStationery1.jpg',name:'小贴纸',price:'2.00'},
-    {id:'02',picture:'src/assets/images/HomeStationery2.jpg',name:'中南签字笔',price:'5.00'},
-    {id:'03',picture:'src/assets/images/HomeStationery3.jpg',name:'车线本',price:'7.80'},
-    {id:'04',picture:'src/assets/images/HomeStationery4.jpg',name:'校训书签',price:'9.90'}
+const hotList = ref([
+    {id:'01',picture:'src/assets/images/HomeHot1.jpg',name:'小贴纸',price:'2.00'},
+    {id:'02',picture:'src/assets/images/HomeHot2.jpg',name:'中南签字笔',price:'5.00'},
+    {id:'03',picture:'src/assets/images/HomeHot3.jpg',name:'车线本',price:'7.80'},
+    {id:'04',picture:'src/assets/images/HomeHot4.jpg',name:'校训书签',price:'9.90'}
 ])
 
 import HomePanel from './HomePanel.vue'
 </script>
  
 <template>
-<HomePanel title="品质文房" sub-title="stationary">
+<HomePanel title="人气推荐" sub-title="爆款文创">
     
 </HomePanel>
 
   <!-- 下面是插槽主体内容模版 -->
   <ul class="goods-list">
-    <li v-for="item in stationeryList" :key="item.id">
+    <li v-for="item in hotList" :key="item.id">
       <RouterLink to="/">
         <img v-img-lazy="item.picture" alt="" />
         <p class="name">{{ item.name }}</p>
@@ -38,12 +38,13 @@ import HomePanel from './HomePanel.vue'
   justify-content: space-between;
   height: 406px;
   width:1240px;
+  margin: 0 auto;
 
   li {
     width: 306px;
     height: 406px;
 
-    background: #f0f9f4;
+    background: #aac0ff;
     transition: all .5s;
 
     &:hover {
@@ -66,7 +67,7 @@ import HomePanel from './HomePanel.vue'
     }
 
     .price {
-      color: $priceColor;
+      color: #cf4444;
     }
   }
 }

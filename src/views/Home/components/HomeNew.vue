@@ -32,7 +32,7 @@ import HomePanel from './HomePanel.vue'
   <ul class="goods-list">
     <li v-for="item in newList" :key="item.id">
       <RouterLink to="/">
-        <img :src="item.picture" alt="" />
+        <img v-img-lazy="item.picture" alt="" />
         <p class="name">{{ item.name }}</p>
         <p class="price">&yen;{{ item.price }}</p>
       </RouterLink>
@@ -48,12 +48,13 @@ import HomePanel from './HomePanel.vue'
   justify-content: space-between;
   height: 406px;
   width:1240px;
+  margin: 0 auto;
 
   li {
     width: 306px;
     height: 406px;
 
-    background: #f0f9f4;
+    background: #aac0ff;
     transition: all .5s;
 
     &:hover {
@@ -76,7 +77,7 @@ import HomePanel from './HomePanel.vue'
     }
 
     .price {
-      color: $priceColor;
+      color: #cf4444;
     }
   }
 }

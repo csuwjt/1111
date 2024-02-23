@@ -14,11 +14,11 @@
 import {ref} from 'vue'
 
 const bannerList=ref([
-    {id:'01',picture:'src/assets/images/banner1.jpg'},
-    {id:'02',picture:'src/assets/images/banner2.jpg'},
-    {id:'03',picture:'src/assets/images/banner3.jpg'},
-    {id:'04',picture:'src/assets/images/banner4.png'},
-    {id:'05',picture:'src/assets/images/banner5.png'}
+    {id:'01',picture:'../src/assets/images/banner1.jpg'},
+    {id:'02',picture:'../src/assets/images/banner2.jpg'},
+    {id:'03',picture:'../src/assets/images/banner3.jpg'},
+    {id:'04',picture:'../src/assets/images/banner4.png'},
+    {id:'05',picture:'../src/assets/images/banner5.png'}
 ]) 
 </script>
 

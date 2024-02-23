@@ -1,36 +1,26 @@
 <script setup>
 
-// import HomePanel from './HomePanel.vue'
-// import {findNewAPI} from '@/apis/home'
-// import {ref,onMounted} from 'vue'
 
-// const newList = ref ([])
-
-// const getNewList = async()=>{
-//     const res = await findNewAPI()
-//     newList.value=res.result
-// }
-// onMounted( () => getNewList() )
 import {ref} from 'vue'
 
-const newList = ref([
-    {id:'01',picture:'src/assets/images/HomeNew1.jpg',name:'龙年红包',price:'2.00'},
-    {id:'02',picture:'src/assets/images/HomeNew2.jpg',name:'龙年台历',price:'15.00'},
-    {id:'03',picture:'src/assets/images/HomeNew3.jpg',name:'长款羽绒服',price:'499.00'},
-    {id:'04',picture:'src/assets/images/HomeNew4.jpg',name:'中南杯茶',price:'40.00'}
+const stationeryList = ref([
+    {id:'01',picture:'src/assets/images/HomeStationery1.jpg',name:'小贴纸',price:'2.00'},
+    {id:'02',picture:'src/assets/images/HomeStationery2.jpg',name:'中南签字笔',price:'5.00'},
+    {id:'03',picture:'src/assets/images/HomeStationery3.jpg',name:'车线本',price:'7.80'},
+    {id:'04',picture:'src/assets/images/HomeStationery4.jpg',name:'校训书签',price:'9.90'}
 ])
 
 import HomePanel from './HomePanel.vue'
 </script>
  
 <template>
-<HomePanel title="文创上新" sub-title="新鲜出炉 品质靠谱">
+<HomePanel title="品质文房" sub-title="stationary">
     
 </HomePanel>
 
   <!-- 下面是插槽主体内容模版 -->
   <ul class="goods-list">
-    <li v-for="item in newList" :key="item.id">
+    <li v-for="item in stationeryList" :key="item.id">
       <RouterLink to="/">
         <img :src="item.picture" alt="" />
         <p class="name">{{ item.name }}</p>

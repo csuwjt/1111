@@ -44,7 +44,7 @@ goods:[{picture:'src/assets/images/daily1.jpg',name:'中南口罩',desc:'已售3
   {id:'06',name:'定制服务',icon:'src/assets/images/icon6.png',
   goods:[{picture:'src/assets/images/custom1.jpg',name:'印章定制',desc:'已售147个',price:'50.00',id:'01'},
   {picture:'src/assets/images/custom2.jpg',name:'定制polo',desc:'已售357个',price:'999.00',id:'02'},
-  {picture:'src/assets/images/custom3.jpg',name:'定制炭雕盘',desc:'已售0个',price:'999.00',id:'03'}
+  {picture:'src/assets/images/custom3.png',name:'定制炭雕盘',desc:'已售0个',price:'999.00',id:'03'}
   ]}
 ])
 return {

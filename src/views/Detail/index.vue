@@ -20,7 +20,7 @@
           <div class="goods-info">
             <div class="media">
               <!-- 图片预览区 -->
-              <img src="../src/assets/images/HomeNew1.jpg">
+              <img src="D:\users\支线\vue-wenchuang\src\assets\images\HomeNew1.jpg">
               <!-- 统计数量 -->
               <ul class="goods-sales">
                 <li>

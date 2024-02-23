@@ -55,7 +55,7 @@
           <a href="javascript:;">搜索推荐</a>
           <a href="javascript:;">友情链接</a>
         </p>
-        <p>CopyRight &copy; 小兔鲜儿</p>
+        <p>CopyRight &copy; 王焌涛</p>
       </div>
     </footer>
   </div>
@@ -100,16 +100,19 @@
 
     i {
       font-size: 14px;
-      color: $xtxColor;
+      color: #274cba;
       letter-spacing: -5px;
     }
   }
 }
 
 .login-section {
-  background: url('@/assets/images/login-bg.png') no-repeat center / cover;
+  background: url('@/assets/images/login-bg.gif') no-repeat center / cover;
   height: 488px;
+  background-size: 100% 100%;
   position: relative;
+  width:1240px;
+  margin:0 auto;
 
   .wrapper {
     width: 380px;
@@ -170,7 +173,7 @@
     text-align: right;
 
     a {
-      color: $xtxColor;
+      color: #274cba;
 
       i {
         font-size: 14px;
@@ -209,12 +212,12 @@
           width: 100%;
 
           &.error {
-            border-color: $priceColor;
+            border-color: #cf4444;
           }
 
           &.active,
           &:focus {
-            border-color: $xtxColor;
+            border-color: #274cba;
           }
         }
 
@@ -237,7 +240,7 @@
         position: absolute;
         font-size: 12px;
         line-height: 28px;
-        color: $priceColor;
+        color: #cf4444;
 
         i {
           font-size: 14px;
@@ -259,7 +262,7 @@
       color: #fff;
       text-align: center;
       line-height: 40px;
-      background: $xtxColor;
+      background: #274cba;
 
       &.disabled {
         background: #cfcdcd;
@@ -283,7 +286,7 @@
 }
 
 .subBtn {
-  background: $xtxColor;
+  background: #274cba;
   width: 100%;
   color: #fff;
 }

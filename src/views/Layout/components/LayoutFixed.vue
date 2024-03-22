@@ -41,8 +41,6 @@ const categoryStore =   useCategoryStore()
   z-index: 999;
   background-color: #fff;
   border-bottom: 1px solid #e4e4e4;
-  // 此处为关键样式!!!
-  // 状态一：往上平移自身高度 + 完全透明
   transform: translateY(-100%);
   opacity: 0;
 
